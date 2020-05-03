@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+group 'com.riter'
+version '1.0.0'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    testImplementation "org.spockframework:spock-core:1.3-groovy-2.5"
+    testImplementation("com.athaydes:spock-reports:1.7.1") {
+        transitive = false // this avoids affecting your version of Groovy/Spock
+    }
+}
+
+wrapper {
+    gradleVersion = '6.3'
+}
