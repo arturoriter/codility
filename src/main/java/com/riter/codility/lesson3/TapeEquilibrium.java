@@ -5,7 +5,8 @@ package com.riter.codility.lesson3;
  */
 public class TapeEquilibrium {
 
-    public int solutionLoops(int[] A) {
+    // Fail in the performance tests
+    public int simpleSolution(int[] A) {
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < A.length - 1; i++) {
             int sumPart1 = 0;

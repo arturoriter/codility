@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class PermCheck {
 
-    //Failed in the performance tests
+    // Fail in the performance tests
     public int solutionFirstAttempt(int[] A) {
         TreeSet<Integer> mySet = new TreeSet<>();
         for (int elem : A) {

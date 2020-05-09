@@ -12,7 +12,7 @@ class MinAvgTwoSliceSpec extends Specification {
     }
 
     @Unroll
-    def 'The minimal average of any slice containing at least two elements of array #A should result #result'() {
+    def 'The minimal average of any slice containing at least two elements of the array #A should result #result'() {
         expect:
         clazz.solution(A as int[]) == result
 

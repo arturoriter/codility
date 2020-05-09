@@ -5,7 +5,7 @@ package com.riter.codility.lesson5;
  */
 public class PassingCars {
 
-    public int solutionSimple(int[] A) {
+    public int simpleSolution(int[] A) {
         int count = 0;
         for (int i = 0; i < A.length; i++) {
             if (A[i] == 0) {

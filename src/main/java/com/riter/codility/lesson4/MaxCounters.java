@@ -7,8 +7,8 @@ import java.util.Arrays;
  */
 public class MaxCounters {
 
-    //TIMEOUT ERROR
-    public int[] solutionSimple(int N, int[] A) {
+    // Fail in the performance tests
+    public int[] simpleSolution(int N, int[] A) {
         int[] counters = new int[N];
         int max = 0;
         for (int value : A) {

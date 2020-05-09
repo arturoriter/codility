@@ -6,7 +6,7 @@ package com.riter.codility.lesson5;
 public class CountDiv {
 
     //Time Complexity: O(n)
-    public int solution1(int A, int B, int K) {
+    public int simpleSolution(int A, int B, int K) {
         int count = 0;
         for (int i = A; i <= B; i++) {
             if (i % K == 0) {

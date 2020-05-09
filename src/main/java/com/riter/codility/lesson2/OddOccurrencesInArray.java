@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
  */
 public class OddOccurrencesInArray {
 
-    // bad performance
-    public int solutionStream(int[] A) {
+    // Fail in the performance tests
+    public int solutionUsingStream(int[] A) {
         return Arrays.stream(A).boxed()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet()
@@ -33,7 +33,9 @@ public class OddOccurrencesInArray {
         }
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() % 2 != 0) return entry.getKey();
+            if (entry.getValue() % 2 != 0) {
+                return entry.getKey();
+            }
         }
         throw new RuntimeException("Could not find element that was left unpaired.");
     }

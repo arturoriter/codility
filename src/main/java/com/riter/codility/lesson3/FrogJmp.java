@@ -5,8 +5,8 @@ package com.riter.codility.lesson3;
  */
 public class FrogJmp {
 
-    //bad performance
-    public int solutionWithIteration(int X, int Y, int D) {
+    // Fail in the performance tests
+    public int solutionUsingIteration(int X, int Y, int D) {
         int jumpNumber = 0;
         int result = X;
         while (result < Y) {
