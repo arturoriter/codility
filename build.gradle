@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     testImplementation "org.slf4j:slf4j-simple:1.7.30"
-    testImplementation "org.spockframework:spock-core:1.3-groovy-2.5"
+    testImplementation "org.spockframework:spock-core:2.0-groovy-3.0"
     testImplementation("com.athaydes:spock-reports:1.7.1") {
         transitive = false // this avoids affecting your version of Groovy/Spock
     }
